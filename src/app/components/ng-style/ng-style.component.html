@@ -1,0 +1,18 @@
+<div class="content">
+    <h1>Diretiva ngStyle</h1>
+    <br /><br />
+
+    <input type="text" [(ngModel)]="cores" />
+    <div [ngStyle]="{'color': cores}">
+        Mudando a cor do texto!
+    </div>
+    <br />
+    <input type="text" [(ngModel)]="tamanho" />
+    <div [ngStyle]="{'font-size.px': tamanho}">
+        Mudando o tamanho da fonte!
+    </div>
+    <br />
+    <div [ngStyle]="objNgStyle">
+        Mudando a cor e o tamanho da fonte do texto pela propriedade descrita no arquivo .TS!
+    </div>
+</div>

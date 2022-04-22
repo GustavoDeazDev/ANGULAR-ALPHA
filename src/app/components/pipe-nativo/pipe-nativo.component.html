@@ -1,0 +1,79 @@
+<h2>Implementação Pipe Custom</h2>
+<input type = "text" [(ngModel)] = "raizQuatro" placeholder= "Informe um numero para obter a raiz quadrada"/>
+<br />
+<table class = "bordaTabela">
+    <thead>
+        <tr>
+            <th>A raiz quadrada de {{ raizUm }} é</th>
+            <th>A raiz quadrada de {{ raizDois }} é</th>
+            <th>A raiz quadrada de {{ raizTres }} é</th> 
+            <th>A raiz quadrada de {{ raizQuatro }} é</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ raizUm | raizquadrada }}</td>
+            <td>{{ raizDois | raizquadrada }}</td>
+            <td>{{ raizTres | raizquadrada }}</td>
+            <td>{{ raizQuatro | raizquadrada }}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<h2>Implementação Pipes Nativos</h2>
+<table class = "bordaTabela">
+    <thead>
+        <tr>
+            <th>UpperCase Pipe</th>
+            <th>LowerCase Pipe</th>
+            <th>Currency Pipe - Pipe para conversão de moedas</th>
+            <th>Date Pipe - para para transformação de datas</th>
+            <th>Decimal Pipe - transformação de casas decimais</th>
+            <th>Json Pipe - converter um objeto em json format</th>
+            <th>Percent Pipe - transformação em porcetagem</th>
+            <th>Slice Pipe - fatiamento de valores</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ texto | uppercase }}</td>
+            <td>{{ texto | lowercase }}</td>
+
+            <td>{{ numFloat | currency: "USD" }}
+                <br />
+                {{ numFloat | currency: "BRL" }}
+            </td>
+
+            <td>{{ dataHoje | date: "d/M/y" }}
+                <br />
+                {{ dataHoje | date: "shortTime" }}
+            </td>
+
+            <td>{{ numInt | number: "3.4-4" }}</td>
+            <td>{{ objLiteral | json }}</td>
+            <td>{{ numPercent | percent }}</td>
+            <td>{{ mesesAno | slice: 2:6 }}</td>
+        </tr>
+    </tbody>
+</table>-->

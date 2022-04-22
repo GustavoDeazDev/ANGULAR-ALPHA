@@ -1,0 +1,32 @@
+<div class = "content">
+    <form [formGroup] = "dadosform" (ngSubmit) = "receberDados(dadosform.value)" >
+        <input type = "email" name = "email" placeholder =" Informe um email" formControlName = "email" />
+        <br />
+        <input type = "password" name = "password" placeholder = "informe sua senha" formControlName = "senha" />
+        <br />
+        <input type = "submit" [disabled] = "!dadosform.valid" value = "Enviar" />
+    </form>
+
+    <p>O email informado foi: {{ email }}</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class = "content">
+    <form #capturaDados = "ngForm" (ngSubmit) = "enviarDados(capturaDados.value)">
+        <input type = "email" name = "email" placeholder= "Informe seu email" ngModel />
+        <br />
+        <input type = "password" name = "senha" placeholder= "Informe a senha" ngModel />
+        <br />
+        <input type = "submit" value = "Enviar" />
+    </form>
+</div>-->
